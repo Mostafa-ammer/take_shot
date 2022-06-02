@@ -1,0 +1,547 @@
+/************global css style *******************/
+
+:root {
+  --main-color: #9501d2;
+  --bg-black-900: #f2f2fc;
+  --text-black-900: #302e4d;
+  --text-black-700: #504e70;
+}
+body {
+  line-height: 1.5;
+  font-size: 16px;
+}
+* {
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "balo";
+  src: url(../../public/fonts/font/BalooChettan.ttf);
+}
+
+@font-face {
+  font-family: "jose";
+  src: url(../../public/fonts/font/JosefinSans.ttf);
+}
+/***********login page *******************/
+.cover {
+  background-image: url(../../public/images/background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 753px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover .wrapper {
+  border: 1px solid gray;
+  max-width: 80%;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: start;
+  background-color: #eee;
+  /*padding: 32px 30px;*/
+}
+
+.cover .wrapper .login {
+  width: 50%;
+  background-color: #ffffff;
+  padding: 32px 30px;
+  box-shadow: 2px 2px 7px #c1bcbc;
+  height: 80vh;
+}
+.cover .wrapper .image {
+  width: 50%;
+}
+.cover .wrapper .login .title h1 {
+  text-transform: capitalize;
+  padding-left: 8px;
+  font-family: "balo";
+  color: var(--main-color);
+}
+
+.cover .wrapper .login input[type="email"],
+.cover .wrapper .login input[type="password"] {
+  height: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 45px;
+  padding-left: 10px;
+  background: none;
+  border-radius: 5px;
+  font-family: "jose";
+}
+
+.cover .wrapper .login input[type="email"]:focus,
+.cover .wrapper .login input[type="password"]:focus {
+  border: 2px solid var(--main-color);
+}
+
+.cover .wrapper .login input[type="submit"] {
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  background: var(--main-color);
+  border: none;
+  color: #fff;
+  padding: 15px 20px;
+  width: 100%;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "balo";
+}
+
+.cover .wrapper .login input[type="submit"]:hover {
+  background: var(--main-color);
+}
+
+.cover .wrapper .login .button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.cover .wrapper .login .login-form {
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cover .wrapper .login .list-container {
+  display: flex;
+}
+
+.cover .wrapper .login .error {
+  color: red;
+  font-size: 12px;
+}
+
+.cover .wrapper .login .input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 10px;
+  font-family: "jose";
+}
+
+.cover .wrapper .login .check {
+  margin-left: 12px;
+}
+
+.cover .wrapper .login .check label {
+  font-family: "jose";
+  padding-left: 4px;
+}
+
+.cover .wrapper .login .rows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cover .wrapper .login .rows a {
+  text-decoration: underline;
+  font-family: "jose";
+  font-size: 13px;
+  color: gray;
+}
+
+.cover .have-account {
+  display: flex;
+  flex-direction: row;
+  padding-top: 15px;
+}
+.cover .have-account a {
+  text-decoration: underline;
+  padding-left: 6px;
+  font-family: "jose";
+}
+
+.cover .have-account p {
+  font-family: "jose";
+}
+.cover .login-with p {
+  font-family: "jose";
+  color: #c2bebe;
+  text-align: center;
+  font-size: 16px;
+  max-width: 600px;
+  position: relative;
+}
+
+.cover .login-with p:before {
+  content: "";
+  display: block;
+  width: 158px;
+  height: 1px;
+  background: #cac5c5;
+  left: 44px;
+  top: 50%;
+  position: absolute;
+}
+
+.cover .login-with p:after {
+  content: "";
+  display: block;
+  width: 158px;
+  height: 1px;
+  background: #c4c3c3;
+  right: 44px;
+  top: 50%;
+  position: absolute;
+}
+.cover .login-with {
+  margin-top: 35px;
+}
+
+.cover .two-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.two-link {
+  margin-top: 20px;
+}
+
+.cover .two-link .google {
+  border-radius: 8px;
+  border: 2px solid red;
+  padding: 11px 60px;
+  font-weight: bold;
+  display: flex;
+  transition: all 0.7s;
+  cursor: pointer;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cover .two-link .google:hover {
+  background-color: red;
+}
+.cover .two-link .google a {
+  color: red;
+  text-decoration: none;
+}
+
+.cover .two-link .google:hover a {
+  color: #ffffff;
+}
+.cover .two-link .google:hover .ic {
+  color: #ffffff;
+}
+
+.cover .two-link .facebook {
+  border-radius: 8px;
+  border: 2px solid var(--main-color);
+  padding: 11px 60px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.7s;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cover .two-link .facebook:hover {
+  background-color: var(--main-color);
+}
+.cover .two-link .facebook a {
+  color: var(--main-color);
+}
+.cover .two-link .facebook:hover a {
+  color: #ffffff;
+}
+.cover .two-link .facebook:hover .ic {
+  color: #ffffff;
+}
+
+.cover .two-link a {
+  font-family: "balo";
+  text-decoration: none;
+}
+.cover .two-link .ic {
+  font-size: 22px;
+  margin-right: 17px;
+}
+
+.cover .two-link .google .ic {
+  color: red;
+}
+.cover .two-link .facebook .ic {
+  color: var(--main-color);
+}
+
+.cover .image img {
+  width: 100%;
+  height: 601px;
+  /* max-width: 80%; */
+  height: 80vh;
+  /* width: 100%;*/
+}
+
+/*******************************media query***************************/
+
+@media screen and (max-width: 600px) {
+  .cover .wrapper {
+    box-sizing: border-box;
+    border: 1px solid gray;
+    max-width: 92%;
+    height: 92vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: start;
+    background-color: #eee;
+    /* padding: 32px 30px;
+    /* padding: 32px 30px; */
+  }
+  .cover .image img {
+    display: none;
+  }
+  .cover .wrapper .login {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 32px 30px;
+    box-shadow: 2px 2px 7px #c1bcbc;
+    height: 92vh;
+  }
+  .cover .two-link .google {
+    border-radius: 8px;
+    border: 2px solid red;
+    padding: 8px 20px;
+    font-weight: bold;
+    display: flex;
+    transition: all 0.7s;
+    cursor: pointer;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+  }
+  .cover .two-link .facebook {
+    border-radius: 8px;
+    padding: 8px 20px;
+    font-weight: bold;
+    display: flex;
+    transition: all 0.7s;
+    cursor: pointer;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .cover .wrapper .image {
+    width: 0%;
+  }
+  .cover .login-with p:before {
+    content: "";
+    display: block;
+    width: 30%;
+    height: 1px;
+    background: #cac5c5;
+    left: 0px;
+    top: 50%;
+    position: absolute;
+  }
+  .cover .login-with p:after {
+    content: "";
+    display: block;
+    width: 30%;
+    height: 1px;
+    background: #c4c3c3;
+    right: 0px;
+    top: 50%;
+    position: absolute;
+  }
+  .cover .login-with {
+    margin-top: 11px;
+  }
+  .cover {
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .cover .image img {
+    display: none;
+  }
+  .cover .wrapper .login {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 32px 30px;
+    box-shadow: 2px 2px 7px #c1bcbc;
+    height: 80vh;
+  }
+  .cover .two-link .google {
+    border-radius: 8px;
+    border: 2px solid red;
+    padding: 8px 40px;
+    font-weight: bold;
+    display: flex;
+    transition: all 0.7s;
+    cursor: pointer;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .cover .two-link .facebook {
+    border-radius: 8px;
+    padding: 8px 40px;
+    font-weight: bold;
+    display: flex;
+    transition: all 0.7s;
+    cursor: pointer;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .cover .wrapper .image {
+    width: 0%;
+  }
+  .cover .login-with p:before {
+    content: "";
+    display: block;
+    width: 36%;
+    height: 1px;
+    background: #cac5c5;
+    left: 0px;
+    top: 50%;
+    position: absolute;
+  }
+  .cover .login-with p:after {
+    content: "";
+    display: block;
+    width: 36%;
+    height: 1px;
+    background: #c4c3c3;
+    right: 0px;
+    top: 50%;
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .cover .image img {
+    display: none;
+  }
+  .cover .login-with {
+    margin-top: 12px;
+  }
+  .cover .wrapper .login {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 32px 30px;
+    box-shadow: 2px 2px 7px #c1bcbc;
+    height: 80vh;
+  }
+  .cover .two-link .google {
+    border-radius: 8px;
+    border: 2px solid red;
+    padding: 8px 60px;
+    font-weight: bold;
+    display: flex;
+    transition: all 0.7s;
+    cursor: pointer;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .cover .two-link .facebook {
+    border-radius: 8px;
+    padding: 8px 60px;
+    font-weight: bold;
+    display: flex;
+    transition: all 0.7s;
+    cursor: pointer;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .cover .wrapper .image {
+    width: 0%;
+  }
+  .cover .login-with p:before {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 1px;
+    background: #cac5c5;
+    left: 0px;
+    top: 50%;
+    position: absolute;
+  }
+  .cover .login-with p:after {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 1px;
+    background: #c4c3c3;
+    right: 0px;
+    top: 50%;
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1533px) {
+  .cover .two-link .facebook {
+    border-radius: 8px;
+    border: 2px solid var(--main-color);
+    padding: 11px 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.7s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .cover .two-link .google {
+    border-radius: 8px;
+    border: 2px solid red;
+    padding: 11px 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.7s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .cover .login-with p:before {
+    content: "";
+    display: block;
+    width: 32%;
+    height: 1px;
+    background: #cac5c5;
+    left: 7px;
+    top: 50%;
+    position: absolute;
+  }
+  .cover .login-with p::after {
+    content: "";
+    display: block;
+    width: 32%;
+    height: 1px;
+    background: #cac5c5;
+    right: 7px;
+    top: 50%;
+    position: absolute;
+  }
+}
