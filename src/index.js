@@ -9,6 +9,8 @@ import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
 import Reset from "./Reset_Pass/Reset";
 import Update from "./Update_Pass/Update";
 import Forget from "./Forget_Pass/Forget";
+import User from "./User/User";
+
 /*import Update from "./Update_Pass/Update";*/
 <link
   rel="stylesheet"
@@ -19,6 +21,6 @@ import Forget from "./Forget_Pass/Forget";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
-    <Forget />
+    <User />
   </BrowserRouter>
 );
