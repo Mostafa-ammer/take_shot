@@ -118,7 +118,7 @@ const User = () => {
         <div className={styles.cards_with_sort}>
           <div className={styles.sorted_by}>
             <div className="head">
-              <h2>Enjoy The Collection</h2>{" "}
+              <h2>Enjoy The Collection</h2>
             </div>
             <div className="">
               <label for="time">SortedBY: </label>

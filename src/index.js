@@ -10,6 +10,7 @@ import Reset from "./Reset_Pass/Reset";
 import Update from "./Update_Pass/Update";
 import Forget from "./Forget_Pass/Forget";
 import User from "./User/User";
+import SocialMedia from "./SocialMediaForm/SocialMedia";
 
 /*import Update from "./Update_Pass/Update";*/
 <link
@@ -21,6 +22,6 @@ import User from "./User/User";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
-    <User />
+    <SocialMedia />
   </BrowserRouter>
 );
